@@ -9,7 +9,7 @@ def remove():
         l.sort()
         flag = True
         if len(l) == 1:
-            flag = False
+            flag = False    
         for i in range(len(l)-1):
             if l[i+1] - l[i] > 1:
                 flag = False
@@ -17,7 +17,6 @@ def remove():
             else:
                 flag = True
                 
-        if flag : 
             final.append("YES")
         else:
             final.append("NO")
